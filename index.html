@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="dist/css/main.min.css" />
+  <title>Search Engine</title>
+</head>
+
+<body>
+  <main>
+    <h1 class="hidden" role="heading">Wikipedia based search engine</h1>
+    <section class="entryPart">
+      <h3 class="hidden">Section for entering the search query</h3>
+      <div id="searchLogo" class="searchLogo">
+        <span class="blue">S</span>
+        <span class="red">e</span>
+        <span class="yellow">a</span>
+        <span class="blue">r</span>
+        <span class="green">c</span>
+        <span class="red">h</span>
+        <span class="yellow star">*</span>
+      </div>
+      <form id="searchEntry" class="searchEntry">
+        <label class="hidden" for="searchInput">Enter search query</label>
+        <input type="text" id="searchInput" class="searchInput" placeholder="Enter a search term" />
+        <div id="clearText" class="none clear" aria-label="Clear the search input">
+          <i class="fas fa-times"></i>
+        </div>
+        <button role="submit" id="submitButton" class="button submitButton">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </section>
+    <section class="resultsPart">
+      <h3 class="hidden">Displaying the search results</h3>
+      <div id="resultsNumber" class="resultsNumber" aria-live="assertive">
+        Displaying 2 results
+      </div>
+      <div id="resultItems" class="resultItems">
+        <div id="resultItem" class="resultItem">
+          <div id="title" class="title"><a href="#">Dachsund</a></div>
+          <div class="itemContent">
+            <div class="itemImage">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mao-the-dachshund-wikipedia.png/50px-Mao-the-dachshund-wikipedia.png"
+                alt="Dachsund" />
+            </div>
+            <div class="itemText">
+              <p class="itemDescription">
+                fsdfsd 100.0% 32 ratings. Payment Methods: Bank Transfer,
+                PayPal, Cash; Ships From: Switzerland. Seller Terms. Price
+                Range; Custom Range.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="resultItem" class="resultItem">
+          <div id="title" class="title"><a href="#">Dachsund</a></div>
+          <div class="itemContent">
+            <div class="itemImage">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mao-the-dachshund-wikipedia.png/50px-Mao-the-dachshund-wikipedia.png"
+                alt="Dachsund" />
+            </div>
+            <div class="itemText">
+              <p class="itemDescription">
+                fsdfsd 100.0% 32 ratings. Payment Methods: Bank Transfer,
+                PayPal, Cash; Ships From: Switzerland. Seller Terms. Price
+                Range; Custom Range.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      <span aria-hidden="true">&lt;&lt; </span>Results powered by
+      <a target="_blank" href="https://www.wikipedia.org/">Wikipedia</a> <span aria-hidden="true"> &gt;&gt;</span>
+    <p><a target="_blank" href="https://github.com/PetarBoshkoski/">Petar Boshkoski</a></p>
+    </p>
+  </footer>
+</body>
+
+</html>
