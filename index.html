@@ -4,6 +4,8 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" type="text/css" href="dist/css/main.min.css" />
+<link rel='icon' href='https://icons.iconarchive.com/icons/hydrattz/multipurpose-alphabet/256/Letter-P-blue-icon.png' type='image/x-icon' />
+  <script src="/javascipt/main.js" type="module"> </script>
   <title>Search Engine</title>
 </head>
 
@@ -23,7 +25,7 @@
       </div>
       <form id="searchEntry" class="searchEntry">
         <label class="hidden" for="searchInput">Enter search query</label>
-        <input type="text" id="searchInput" class="searchInput" placeholder="Enter a search term" />
+        <input type="text" id="searchInput" class="searchInput" placeholder="Enter a search term"  autocomplete="off"/>
         <div id="clearText" class="none clear" aria-label="Clear the search input">
           <i class="fas fa-times"></i>
         </div>
@@ -35,44 +37,8 @@
     <section class="resultsPart">
       <h3 class="hidden">Displaying the search results</h3>
       <div id="resultsNumber" class="resultsNumber" aria-live="assertive">
-        Displaying 2 results
       </div>
       <div id="resultItems" class="resultItems">
-        <div id="resultItem" class="resultItem">
-          <div id="title" class="title"><a href="#">Dachsund</a></div>
-          <div class="itemContent">
-            <div class="itemImage">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mao-the-dachshund-wikipedia.png/50px-Mao-the-dachshund-wikipedia.png"
-                alt="Dachsund" />
-            </div>
-            <div class="itemText">
-              <p class="itemDescription">
-                fsdfsd 100.0% 32 ratings. Payment Methods: Bank Transfer,
-                PayPal, Cash; Ships From: Switzerland. Seller Terms. Price
-                Range; Custom Range.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="resultItem" class="resultItem">
-          <div id="title" class="title"><a href="#">Dachsund</a></div>
-          <div class="itemContent">
-            <div class="itemImage">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mao-the-dachshund-wikipedia.png/50px-Mao-the-dachshund-wikipedia.png"
-                alt="Dachsund" />
-            </div>
-            <div class="itemText">
-              <p class="itemDescription">
-                fsdfsd 100.0% 32 ratings. Payment Methods: Bank Transfer,
-                PayPal, Cash; Ships From: Switzerland. Seller Terms. Price
-                Range; Custom Range.
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   </main>
