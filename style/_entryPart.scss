@@ -2,9 +2,11 @@
     justify-content: center;
     text-align: center;
     padding-top: 30px;
-
+    @include mediaQuery(768px) {
+        padding-top: 60px;
+    }
     .searchLogo {
-        font-size: 3.5rem;
+        font-size: 5.5rem;
         letter-spacing: -8px;
         font-weight: bold;
     }
@@ -22,7 +24,7 @@
         border: 2px solid $form-border-color;
         border-radius: 100px;
         @include mediaQuery(768px) {
-            width: 80vw;
+            width: 95vw;
         }
     }
     .searchEntry:hover {

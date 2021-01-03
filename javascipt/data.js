@@ -16,9 +16,9 @@ export const getCharsByWidth = () => {
     let numberOfChars = 0;
     const width = window.innerWidth || document.body.clientWidth;
     if (width <= 400) {
-      numberOfChars = 100;
+      numberOfChars = 50;
     } else if (width > 400 && width <= 900) {
-      numberOfChars = 150;
+      numberOfChars = 100;
     } else {
       numberOfChars = 200;
     }
@@ -36,10 +36,14 @@ export const numberOfResults = (number) => {
     const resultItems = document.getElementById("resultItems");
     resultItems.classList.add("resultsNumber");
     const emptyResult = document.createTextNode("No results for this term");
+    const oneResult = document.createTextNode(`Displaying ${number} result`);
     const content = document.createTextNode(`Displaying ${number} results`);
     if(number === 0) {
         resultItems.appendChild(emptyResult);
     }
+    else if(number === 1) {
+      resultItems.appendChild(oneResult);
+  }
     else {
         resultItems.appendChild(content);
     }
